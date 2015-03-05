@@ -1,0 +1,2 @@
+Django
+-e git+https://github.com/Stupeflix/django-haystack.git@master#egg=django-haystack
