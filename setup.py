@@ -14,7 +14,7 @@ setup(
     author = "Elias Showk",
     author_email = "elias@showk.me",
     description = ("django management command 'solr' all-in-one for Solr 5"),
-    license = "BSD",
+    license = "MIT",
     keywords = "solr haystack django management",
     url = "https://github.com/elishowk/django-haystack-solr-commands",
     packages=['haystack_solr_commands'],
@@ -24,10 +24,7 @@ setup(
         "Topic :: Utilities",
         "License :: OSI Approved :: BSD License",
     ],
-    dependency_links=[
-        "git+https://github.com/Stupeflix/django-haystack.git@master#egg=django-haystack"
-    ],
     install_requires=[
-        "Django>=1.4"
+        "Django>=1.4", "django-haystack>=2.2.0"
     ]
 )
