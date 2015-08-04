@@ -11,9 +11,9 @@ This what the  ``manage.py solr`` command provided by this Django App
 
 After cloning this repository
 
-  mkvirtualenv django-hasytack-solr-commands
+  mkvirtualenv django-haystack-solr-commands
   cd django-haystack-solr-commands
-  pip install -r requirements.txt
+  python setup.py install
 
 You will need **wget, tar, rm**
 
@@ -30,14 +30,16 @@ Configure Haystack and this app by adding at to your server settings.py to follo
     SOLR_VERSION = "5.0.0"
     SOLR_CORE = 'haystacksolrcommandsexamplecore'
 
-Add ``haystack_solr_commands`` to your INSTALLED_APPS
+Add ``haystack_solr_commands`` to your INSTALLED_APPS and run :
+
+  python manage.py solr
 
 # Versions tested:
 
-- Python 2.7
+- Python 2.7+
 - Django 1.4+
-- Haystack 2.3.1 with Solr 5.0.0 support from https://github.com/Stupeflix/django-haystack
-- Search engine used : Solr 5.0.0 with the latest pysolr
+- Haystack 2.3.1+ with Solr 5.0.0+ support
+- Search engine used : Solr 5.0.0+ with the latest pysolr
 - Oracle Java JVM version 7 or 8
 
 # About Solr 5.0.0
