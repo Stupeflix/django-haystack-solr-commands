@@ -1,5 +1,5 @@
 import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # Utility function to read the README file.
 # Used for the long_description.  It's nice, because now 1) we have a top level
@@ -17,7 +17,7 @@ setup(
     license = "MIT",
     keywords = "solr haystack django management",
     url = "https://github.com/elishowk/django-haystack-solr-commands",
-    packages=['haystack_solr_commands'],
+    packages = find_packages(),
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 3 - Alpha",
